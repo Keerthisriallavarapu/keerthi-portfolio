@@ -1,2 +1,0 @@
-Add your resume PDF as `public/resume.pdf` so the "resume" download button works.
-This is a placeholder — delete this file after adding the real PDF.
