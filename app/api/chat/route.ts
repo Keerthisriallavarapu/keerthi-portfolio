@@ -1,8 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { KNOWLEDGE_BASE } from "@/lib/knowledge";
 
-export const runtime = "edge";
-
 const SYSTEM_PROMPT = `You are Keerthi S's AI assistant, embedded on his portfolio site. Visitors are typically recruiters, hiring managers, and engineers evaluating Keerthi for senior ML infrastructure roles. Be helpful, accurate, and concise.
 
 You have access to Keerthi's full resume and detailed READMEs for 5 open-source projects. Below is the complete knowledge base — answer ONLY based on this content. If asked about something not in the knowledge base, say so honestly rather than making things up.
