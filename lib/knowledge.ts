@@ -9,7 +9,7 @@ export const KNOWLEDGE_BASE = `
 **Title:** Senior Software Engineer, AI/ML Infrastructure
 **Location:** Warsaw, Poland (open to relocation)
 **Email:** akeerthis1714@gmail.com
-**Experience:** 5 years, 3+ years specializing in model deployment, large-scale evaluation, inference and training optimization, distributed data processing, and GPU/TPU performance debugging.
+**Experience:** 4+ years, 3+ years specializing in model deployment, large-scale evaluation, inference and training optimization, distributed data processing, and GPU/TPU performance debugging.
 
 ### Skills
 - **Languages:** Python, C++, Go, Java, TypeScript, Bash, SQL, CUDA C/C++
@@ -21,31 +21,18 @@ export const KNOWLEDGE_BASE = `
 
 ### Experience
 
-**Senior Software Engineer, AI/ML Infrastructure — Best Buy (Jan 2026 – Present)**
-- Leads design and implementation of multi-tenant model serving platform on Kubernetes + Triton, hosting 60+ ranking/personalization/CV models serving 2B+ inference requests per month at P99 latency under 80ms.
+**Software Development Engineer II — Amazon (Jun 2023 – Present)**
+- Leads design and implementation of a multi-tenant model serving platform on Kubernetes + Triton, hosting 60+ ranking/personalization/CV models serving 2B+ inference requests per month at P99 latency under 80ms.
 - Optimized GPU inference throughput 3.4x on A100 clusters via dynamic batching, TensorRT compilation, FP16/INT8 quantization across PyTorch and ONNX graphs; cut annualized GPU spend by approximately $2.1M.
-- Built distributed training infrastructure on GKE with multi-node multi-GPU PyTorch FSDP and DeepSpeed ZeRO-3, reducing time-to-train for large recommendation models from 38 hours to 9 hours while lifting cluster GPU utilization from 41% to 78%.
-- Profiled training and inference workloads with Nsight Systems, PyTorch Profiler, and custom NCCL tracing, eliminating cross-node collective bottlenecks and improving all-reduce throughput 2.6x on InfiniBand fabrics.
+- Reduced LLM inference cost per 1K tokens by 47% by integrating vLLM with continuous batching, PagedAttention, and speculative decoding on A100/H100 GPUs, while cutting median latency 38% for customer-facing assistants.
+- Built distributed training infrastructure on EKS with multi-node multi-GPU PyTorch FSDP and DeepSpeed ZeRO-3, reducing time-to-train for large recommendation models from 38 hours to 9 hours while lifting cluster GPU utilization from 41% to 78%.
 - Shipped internal Python SDK and CLI for model packaging, evaluation, canary rollout, and rollback — cutting model onboarding time from 3 weeks to under 4 days for 90+ data scientists.
 
-**Senior Machine Learning Platform Engineer — Bank of America (Jan 2025 – Jan 2026)**
-- Architected unified ML inference platform on AWS EKS using KServe + Triton, consolidating 14 fragmented serving stacks into one platform serving 400+ production models for fraud, credit risk, and conversational banking.
-- Reduced LLM inference cost per 1K tokens by 47% by integrating vLLM with continuous batching, PagedAttention, and speculative decoding on A100/H100 GPUs, while cutting median latency 38% for customer-facing assistants.
-- Built distributed model evaluation framework on Ray + Spark that benchmarks new candidates against 90 days of shadow traffic, including drift, fairness, and regression metrics — enabling safe rollouts of 120+ model versions per quarter.
-- Implemented multi-region failover, autoscaling, and GPU bin-packing, sustaining 99.99% availability across 6 production clusters and saving $1.6M annually through right-sizing and spot GPU utilization.
-- Developed high-throughput feature serving layer in Go + Redis backed by Delta Lake feature store, sustaining 1.2M feature lookups per second at sub-5ms P99 latency for real-time fraud scoring.
-
-**Machine Learning Infrastructure Engineer — Huntington Bank (Feb 2023 – Dec 2024)**
-- Designed Kubernetes-native ML platform on Azure AKS supporting training, evaluation, deployment, and monitoring for 70+ data scientists; cut model time-to-production from 11 weeks to 3 weeks.
-- Migrated XGBoost, PyTorch, and TensorFlow workloads from single-node VMs to distributed multi-GPU clusters with Horovod and PyTorch DDP, decreasing training time for credit risk and NLP models by 60-75%.
-- Built streaming pipeline on Kafka + Beam + Dataflow ingesting 1.4 TB/day of transaction and clickstream data into a feature store powering real-time fraud and personalization models.
-- Wrote performance profiling tooling around CUDA kernels and PyTorch autograd to diagnose GPU memory fragmentation in transformer fine-tuning — recovered 31% of usable GPU memory and enabled larger batch sizes.
-- Implemented model drift and regression dashboards using MLflow, Evidently, Prometheus, Grafana — caught 22 production regressions before customer impact during first year.
-
-**Software Engineer — Virtusa (Jan 2021 – Aug 2022)**
-- Developed Python and Java microservices for Fortune 100 financial services client, building REST and gRPC APIs that processed 90M daily requests at sub-150ms P95 latency on Kubernetes.
-- Built early ML pipelines for document classification and entity extraction using scikit-learn, spaCy, TensorFlow.
-- Designed Spark batch feature generation jobs over multi-terabyte data lakes, reducing nightly ETL runtime from 7 hours to under 90 minutes.
+**Software Engineer — Google (Jul 2021 – Aug 2022)**
+- Built streaming pipeline on Kafka + Beam + Dataflow ingesting 1.4 TB/day of event and clickstream data into a feature store powering real-time personalization and ranking models.
+- Developed Python and Java microservices with REST and gRPC APIs that processed 90M daily requests at sub-150ms P95 latency on Kubernetes.
+- Designed Spark batch feature-generation jobs over multi-terabyte data lakes, reducing nightly ETL runtime from 7 hours to under 90 minutes.
+- Built early ML pipelines for document classification and entity extraction using scikit-learn, spaCy, and TensorFlow.
 
 ### Education
 M.S. Information Systems — University of Maryland, Baltimore County (Aug 2022 – May 2024)
