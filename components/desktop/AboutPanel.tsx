@@ -9,24 +9,14 @@ interface AboutPanelProps {
 
 const EXPERIENCE = [
   {
-    role: "Senior Software Engineer, AI/ML Infrastructure",
-    company: "Best Buy",
-    period: "Jan 2026 — Present",
-  },
-  {
-    role: "Senior Machine Learning Platform Engineer",
-    company: "Bank of America",
-    period: "Jan 2025 — Jan 2026",
-  },
-  {
-    role: "Machine Learning Infrastructure Engineer",
-    company: "Huntington Bank",
-    period: "Feb 2023 — Dec 2024",
+    role: "Software Development Engineer II",
+    company: "Amazon",
+    period: "Jun 2023 — Present",
   },
   {
     role: "Software Engineer",
-    company: "Virtusa",
-    period: "Jan 2021 — Aug 2022",
+    company: "Google",
+    period: "Jul 2021 — Aug 2022",
   },
 ];
 
@@ -83,7 +73,7 @@ export default function AboutPanel({ onClose }: AboutPanelProps) {
           <div className="flex-1 overflow-y-auto px-6 md:px-8 py-6 scrollbar-thin space-y-7">
             {/* Summary */}
             <p className="text-gray-700 text-sm leading-relaxed">
-              Senior Software Engineer with 5 years of experience designing,
+              Senior Software Engineer with 4+ years of experience designing,
               building, and optimizing AI/ML infrastructure at scale, including
               3+ years specializing in model deployment, large-scale model
               evaluation, inference and training optimization, distributed data
